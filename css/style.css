@@ -1,0 +1,176 @@
+
+body {
+  font-family: 'Nunito', sans-serif;
+  float: left;
+  width: 100%;
+  margin: 0;
+}
+header {
+  text-align: center;
+}
+fieldset {
+  position: relative;
+  padding-top: 60px;
+  border-top-width:thick;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+}
+legend {
+  position: absolute;
+  top: 20px;
+
+}
+textarea {
+    height: 150px;
+    width: 100%;
+  }
+button {
+  height:30px;
+  width: 100%;
+  border-radius: .5px;
+  background-color: #2eb8b8;
+  color: white;
+  border-style: none;
+}
+h1 {
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+label.light,
+p.light
+input.light,
+p {
+  font-weight: 100;
+  display: inline;
+  opacity: 0.6;
+}
+.container {
+    opacity: 0.5;
+}
+form {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+h2 {
+  text-align: center;
+}
+#top_p,
+#copywrite {
+  font-weight: 100;
+  text-align: center;
+  opacity: 0.4;
+}
+
+input {
+  text-align: right;
+  margin-right: auto;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"]   {
+
+  background: rgba(255,255,255,0.1);
+  border-radius: 5px;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 10px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+  }
+
+button {
+
+  clear: both;
+  border-radius: .5em;
+  background-color: #2eb8b8;
+  color: white;
+
+  border-style: none;
+}
+.bottom {
+  text-align: center;
+}
+label
+ {
+  opacity: 0.2;
+}
+.news,
+.select {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+input[type=radio],
+input[type=checkbox] {
+    margin-right: 10px;
+  }
+select {
+    float:right;
+    width: 550px;
+    height:auto;
+    margin-bottom: 30px;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  }
+
+option {
+    float: right;
+    width: 65%;
+}
+
+
+/* begin media query*/
+@media screen and (min-width: 768px)  {
+
+body {
+    font-family: 'Nunito', sans-serif;
+    width: 100%;
+  }
+  form {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    background-color: lightblue;
+  }
+/* make the label move left and input move right at 768px or wider*/
+  form label {
+    width: 100%;
+    	float: left;
+  }
+  form input {
+    float: right;
+    max-width: 70%;
+  }
+  label.light,
+  p.light
+  input.light,
+  p {
+    font-weight:normal;
+    display: inline;
+    opacity: 1.0;
+  }
+
+  .container {
+     font-weight:normal;
+      opacity: 1.0;
+  }
+
+input[type=radio],
+input[type=checkbox] {
+    float:none;
+  }
+}
