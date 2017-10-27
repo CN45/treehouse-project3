@@ -1,4 +1,6 @@
-
+* {
+	box-sizing: border-box;
+}
 body {
   font-family: 'Nunito', sans-serif;
   float: left;
@@ -73,12 +75,19 @@ input {
   text-align: right;
   margin-right: auto;
 }
-
+/* transition text color to red on focus of text field*/
+input[type=text]:focus {
+  color: red;
+transition-duration: 1s;
+transition-delay: .2s;
+transition-timing-function: linear;
+}
 
 input[type="text"],
 input[type="email"],
 input[type="tel"],
-input[type="number"]   {
+input[type="number"],
+select  {
 
   background: rgba(255,255,255,0.1);
   border-radius: 5px;
@@ -120,17 +129,12 @@ input[type=checkbox] {
     margin-right: 10px;
   }
 select {
-    float:right;
-    width: 550px;
-    height:auto;
-    margin-bottom: 30px;
-    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  display: flex;
+   flex-direction: row;
+   justify-content: space-between;
   }
 
-option {
-    float: right;
-    width: 65%;
-}
+
 
 
 /* begin media query*/
@@ -172,5 +176,10 @@ body {
 input[type=radio],
 input[type=checkbox] {
     float:none;
+  }
+  select {
+    width: 70%;
+    height: 45px;
+    float:right;
   }
 }
