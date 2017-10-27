@@ -136,7 +136,7 @@ select {
      height: 45px;
 
    }
-  }
+
 
 
 
@@ -147,6 +147,7 @@ select {
 body {
     font-family: 'Nunito', sans-serif;
     width: 100%;
+
   }
   form {
     margin: auto;
@@ -154,6 +155,7 @@ body {
     justify-content: center;
     background-color: lightblue;
   }
+
 /* make the label move left and input move right at 768px or wider*/
   form label {
     width: 100%;
