@@ -21,7 +21,8 @@ fieldset {
 legend {
   position: absolute;
   top: 20px;
-
+  font-weight: bold;
+	font-size: 20px;
 }
 textarea {
     height: 150px;
@@ -159,7 +160,9 @@ body {
 /* make the label move left and input move right at 768px or wider*/
   form label {
     width: 100%;
-    	float: left;
+    float: left;
+		display: inline-block;
+    vertical-align: middle;
   }
   form input {
     float: right;
