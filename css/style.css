@@ -83,7 +83,13 @@ input[type=tel]:focus,
 input[type=number]:focus {
   background-color: yellow;
 }
+select:focus {
+  background-color: yellow;
+}
 
+textarea:focus {
+background-color: yellow;
+}
 
 input[type="text"],
 input[type="email"],
