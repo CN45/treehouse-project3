@@ -1,62 +1,69 @@
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
+
 body {
   font-family: 'Nunito', sans-serif;
   float: left;
   width: 100%;
   margin: 0;
 }
+
 header {
   text-align: center;
 }
+
 fieldset {
   position: relative;
   padding-top: 60px;
-  border-top-width:thick;
+  border-top-width: thick;
   border-bottom: none;
   border-left: none;
   border-right: none;
 }
+
 legend {
   position: absolute;
   top: 20px;
   font-weight: bold;
-	font-size: 20px;
+  font-size: 20px;
 }
+
 textarea {
-    height: 150px;
-    width: 100%;
-  }
+  height: 150px;
+  width: 100%;
+}
+
 button {
-  height:30px;
+  height: 30px;
   width: 100%;
   border-radius: .5px;
   background-color: #2eb8b8;
   color: white;
   border-style: none;
 }
+
 h1 {
   text-align: center;
   background-color: black;
   color: white;
 }
-label.light,
-p.light
-input.light,
-p {
+
+label.light, p.light input.light, p {
   font-weight: 100;
   display: inline;
   opacity: 0.6;
 }
+
 .container {
-    opacity: 0.5;
+  opacity: 0.5;
 }
+
 form {
   width: 75%;
   margin: auto;
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
   align-content: center;
@@ -65,8 +72,8 @@ form {
 h2 {
   text-align: center;
 }
-#top_p,
-#copywrite {
+
+#top_p, #copywrite {
   font-weight: 100;
   text-align: center;
   opacity: 0.4;
@@ -76,26 +83,15 @@ input {
   text-align: right;
   margin-right: auto;
 }
-/* transition text color to red on focus of text field*/
-input:focus {
-  border: 5px solid blue;
-  border-radius: 10px;
-}
-select:focus {
-  border: 5px blue solid;
-  border-radius: 10px;
-}
-textarea:focus {
-  border: 5px blue solid;
-  border-radius: 10px;
-}
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-input[type="number"],
-select  {
 
-  background: rgba(255,255,255,0.1);
+/* transition text color to red on focus of text field*/
+
+input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, input[type=number]:focus, {
+  background-color: yellow;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="number"], select {
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 5px;
   font-size: 16px;
   height: auto;
@@ -105,54 +101,49 @@ select  {
   width: 100%;
   background-color: #e8eeef;
   color: #8a97a0;
-  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
   margin-bottom: 30px;
-  }
+}
 
 button {
-
   clear: both;
   border-radius: .5em;
   background-color: #2eb8b8;
   color: white;
-
   border-style: none;
 }
+
 .bottom {
   text-align: center;
 }
-label
- {
+
+label {
   opacity: 0.2;
 }
-.news,
-.select {
+
+.news, .select {
   padding-top: 5px;
   padding-bottom: 5px;
 }
-input[type=radio],
-input[type=checkbox] {
-    margin-right: 10px;
-  }
+
+input[type=radio], input[type=checkbox] {
+  margin-right: 10px;
+}
+
 select {
   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   width: 100%;
-   height: 45px;
-   }
-
-
-
-
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 45px;
+}
 
 /* begin media query*/
-@media screen and (min-width: 768px)  {
 
-body {
+@media screen and (min-width: 768px) {
+  body {
     font-family: 'Nunito', sans-serif;
     width: 100%;
-
   }
   form {
     margin: auto;
@@ -160,42 +151,42 @@ body {
     justify-content: center;
     background-color: lightblue;
   }
-
-/* make the label move left and input move right at 768px or wider*/
+  /* make the label move left and input move right at 768px or wider*/
   form label {
     width: 100%;
     float: left;
-		display: inline-block;
+    display: inline-block;
     vertical-align: middle;
   }
   form input {
     float: right;
     max-width: 70%;
   }
-  label.light,
-  p.light
-  input.light,
-  p {
-    font-weight:normal;
+  label.light, p.light input.light, p {
+    font-weight: normal;
     display: inline;
     opacity: 1.0;
-		position: relative;
-		top: 50%;
-		transform: translateY(150%);/* make the label move to middle of input field at 768px or wider*/
+    position: relative;
+    top: 50%;
+    transform: translateY(150%);
+    /* make the label move to middle of input field at 768px or wider*/
   }
-
   .container {
-     font-weight:normal;
-     opacity: 1.0;
+    font-weight: normal;
+    opacity: 1.0;
   }
-
-input[type=radio],
-input[type=checkbox] {
-    float:none;
+  .label_large {
+    display: inline-block;
+    margin-left: 30px;
+    vertical-align: baseline;
+  }
+  input[type=radio], input[type=checkbox] {
+    display: inline-block;
+    float: left;
   }
   select {
     width: 70%;
     height: 45px;
-    float:right;
+    float: right;
   }
 }
