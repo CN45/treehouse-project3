@@ -152,6 +152,12 @@ select {
     background-color: lightblue;
   }
   /* make the label move left and input move right at 768px or wider*/
+.contact_label {
+    width: 100%;
+    float: left;
+    display: inline-block;
+    vertical-align: middle;
+  }
   .contact {
     width: 100%;
     float: left;
@@ -169,15 +175,15 @@ select {
     position: relative;
     top: 50%;
     transform: translateY(150%);
-    /* make the label move to middle of input field at 768px or wider*/
-  }
+    }/* make the label move to middle of input field at 768px or wider*/
+
   .container {
     font-weight: normal;
     opacity: 1.0;
   }
   .label_large {
     display: inline-block;
-    margin-left: 30px;
+    margin-left: 10px;
     vertical-align: baseline;
   }
   input[type=radio], input[type=checkbox] {
