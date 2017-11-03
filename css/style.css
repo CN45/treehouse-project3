@@ -152,7 +152,7 @@ select {
     background-color: lightblue;
   }
   /* make the label move left and input move right at 768px or wider*/
-  form label {
+  .contact {
     width: 100%;
     float: left;
     display: inline-block;
